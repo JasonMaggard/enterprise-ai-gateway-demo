@@ -32,12 +32,12 @@ describe('QueryController', () => {
   });
 
   it('should respond to a query param', async () => {
-    const res = await controller.runQueryQueryParam('world');
+    const res = await controller.runQueryParam('world');
     expect(res).toEqual('You queried for: world');
   });
 
   it('should return a friendly message when q is missing', async () => {
-    const res = await controller.runQueryQueryParam(undefined);
+    const res = await controller.runQueryParam(undefined);
     expect(res).toEqual({ result: null, message: 'no query provided' });
   });
 });

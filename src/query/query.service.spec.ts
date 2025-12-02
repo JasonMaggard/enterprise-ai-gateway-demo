@@ -38,7 +38,7 @@ describe('QueryService', () => {
   });
 
   it('basicQuery should either return model content or a deterministic fallback', async () => {
-    const res = await service.basicQuery({ user_query: 'unit-test' } as any);
+    const res = await service.basicLangchainQuery({ user_query: 'unit-test' } as any);
     // The service will attempt to call the real model. In CI or environments
     // without a working model/integration the service currently falls back
     // to a deterministic response object. Tests should accept either shape.

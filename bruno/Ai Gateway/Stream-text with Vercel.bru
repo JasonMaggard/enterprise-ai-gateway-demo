@@ -1,0 +1,20 @@
+meta {
+  name: Stream-text with Vercel
+  type: http
+  seq: 4
+}
+
+post {
+  url: http://localhost:3000/query/stream-text
+  body: json
+  auth: inherit
+}
+
+body:json {
+  {"q":"What color is the sun?"}
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
