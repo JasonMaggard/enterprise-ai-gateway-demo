@@ -1,0 +1,20 @@
+meta {
+  name: Basic Query
+  type: http
+  seq: 1
+}
+
+get {
+  url: http://localhost:3000/query/?q=What color is the sun?
+  body: none
+  auth: inherit
+}
+
+params:query {
+  q: What color is the sun?
+}
+
+settings {
+  encodeUrl: true
+  timeout: 0
+}
