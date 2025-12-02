@@ -27,6 +27,10 @@
 
 "Enterprise AI Gateway Service" (NestJS + Claude/OpenAI/Google)
 
+Swagger: http://localhost:3000/api
+
+Note: 'GET' routes are Langchain, 'POST' routes are Vercel
+
 Goals:
 - NestJS microservice that handles (basic) LLM requests
 
